@@ -13,12 +13,18 @@
             "homepage": "http://socalnick.github.com/"
         }
     ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/jeffery/hybridauth"
+        },
+    ],
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*",
         "zf-commons/zfc-base": "0.1.*",
         "zf-commons/zfc-user": "0.1.*",
-        "hybridauth/hybridauth": "dev-master"
+        "hybridauth/hybridauth": "dev-fix-trust-forwarded-sessions"
     },
     "require-dev": {
         "mockery/mockery": "0.8.0"
