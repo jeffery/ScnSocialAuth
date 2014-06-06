@@ -6,10 +6,10 @@ Uses the HybridAuth PHP library to Enable authentication via Google, Facebook, T
 
 Requirements
 ------------
-* [Zend Framework 2](https://github.com/zendframework/zf2) (latest master)
-* [ZfcBase](https://github.com/ZF-Commons/ZfcBase) (latest master)
-* [ZfcUser](https://github.com/ZF-Commons/ZfcUser) (latest master)
-* [HybridAuth](https://github.com/hybridauth/hybridauth) (latest master)
+* [Zend Framework 2](https://github.com/zendframework/zf2) (2.*)
+* [ZfcBase](https://github.com/ZF-Commons/ZfcBase) (0.1.*)
+* [ZfcUser](https://github.com/ZF-Commons/ZfcUser) (1.0.*)
+* [HybridAuth](https://github.com/hybridauth/hybridauth) (2.2.*)
 * Extension php_curl enabled in php.ini
 
 Features
@@ -34,7 +34,7 @@ Features
 
 Installation
 ------------
-It is recommended to add this module to your Zend Framework 2 application using Composer. After cloning [ZendSkeletonApplication](https://github.com/zendframework/ZendSkeletonApplication), change the composer minimum-stability setting to "dev" and add "socalnick/scn-social-auth" to list of requirements, then run php composer.phar install/update. Your composer.json should look something like this:
+It is recommended to add this module to your Zend Framework 2 application using Composer. After cloning [ZendSkeletonApplication](https://github.com/zendframework/ZendSkeletonApplication), add "socalnick/scn-social-auth" to list of requirements, then run php composer.phar install/update. Your composer.json should look something like this:
 ```
 {
     "name": "zendframework/skeleton-application",
@@ -44,18 +44,11 @@ It is recommended to add this module to your Zend Framework 2 application using 
         "framework",
         "zf2"
     ],
-    "minimum-stability": "dev",
     "homepage": "http://framework.zend.com/",
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "dev-master",
-        "socalnick/scn-social-auth": "dev-master"
-    },
-    "autoload": {
-        "psr-0": {
-            "Hybrid": "./vendor/hybridauth/hybridauth/hybridauth/"
-        },
-        "classmap": ["./vendor/hybridauth/hybridauth"]
+        "zendframework/zendframework": "2.*",
+        "socalnick/scn-social-auth": "1.*"
     }
 }
 ```
